@@ -18,7 +18,32 @@ https://www.figma.com/file/tSHSEwpdza0rPbP0j2Z5eM/BUCHA-BUCHA
 ## API and Data Sample
 
 ```json
-
+{
+    "records": [
+        {
+            "id": "recaaS2A1gRp1flBP",
+            "fields": {
+                "type": "herbSpice",
+                "name": "Hibiscus Breeze",
+                "batchSize": "1 gallon",
+                "ingredients": "3 Tbsp dry hibiscus\n2 inches ginger, grated\n1 lime, grated",
+                "days": "3 days"
+            },
+            "createdTime": "2021-05-07T12:17:07.000Z"
+        },
+        {
+            "id": "recQanhVOGM7Ym3C4",
+            "fields": {
+                "type": "fruit",
+                "name": "Peachy Keen",
+                "batchSize": "1 quart",
+                "ingredients": "1 peach, peeled and chopped\n1/8 tsp cinnamon\npinch of ginger",
+                "days": "1-2 days"
+            },
+            "createdTime": "2021-05-07T12:17:07.000Z"
+        }
+    ]
+}
 
 ```
 
