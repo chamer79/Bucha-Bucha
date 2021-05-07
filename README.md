@@ -51,11 +51,16 @@ https://www.figma.com/file/tSHSEwpdza0rPbP0j2Z5eM/BUCHA-BUCHA
 
 #### MVP 
 
--Home Page: Create buttons that will route to each designated recipe category and .
+-Home Page: Create buttons that will route to each designated recipe category and FAQ
+
 -Get request.
+
 -Post request.
+
 -Create new flavor recipes and update Airtable through a form
+
 -FAQ (Bucha Basic) page
+
 -Style with CSS
 
 
@@ -94,13 +99,13 @@ https://www.figma.com/file/tSHSEwpdza0rPbP0j2Z5eM/BUCHA-BUCHA
 | Rendering Data -pg1 | H | 3hrs| 0hrs | 0hrs |
 | Rendering Data - pg2  | H | 3hrs| 0hrs | 0hrs |
 | Rendering Data - pg3  | H | 3hrs| 0hrs | 0hrs |
-| Form Creation | H | 3hrs| 0hrs | 0hrs |
+| Form Creation | H | 4hrs| 0hrs | 0hrs |
 | Data Creation & Update - pg1 | H | 3hrs| 0hrs | 0hrs |
 | Data Creation & Update - pg2| H | 3hrs| 0hrs | 0hrs |
 | Data Creation & Update - pg3 | H | 3hrs| 0hrs | 0hrs |
 | CSS  | H | 8hrs| 0hrs | 0hrs |
 
-| Total | H | 38hrs| 0hrs | 0hrs |
+| Total | H | 39hrs| 0hrs | 0hrs |
 
 ## SWOT Analysis
 
