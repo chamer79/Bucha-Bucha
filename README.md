@@ -14,7 +14,8 @@ https://www.figma.com/file/tSHSEwpdza0rPbP0j2Z5eM/BUCHA-BUCHA
 
 ## Component Hierarchy
 
-Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/uploads/users/1795/posts/30352/image/GettingStartedWithReduxTutorial-React-Component-Structure.png) as an example.
+![image](https://user-images.githubusercontent.com/59977555/117398544-90c01180-aecc-11eb-9479-df4b957d9485.png)
+
 
 ## API and Data Sample
 
