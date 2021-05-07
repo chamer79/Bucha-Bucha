@@ -6,11 +6,11 @@ Bucha Bucha
 
 ## Project Description
 
-Bucha Bucha is a React based app that uses an API from Airtable. Users will be able to view and post recipes (based on category) for flavoring a home brewed kombucha during the second fermentaion cycle.  Users will also be able to view information on kombuca basics -   
+Bucha Bucha is a React based app that uses an API from Airtable. Users will be able to view and post recipes (based on category) for flavoring a home brewed kombucha during the second fermentaion cycle. Users will also be able to view kombucha facts on the Bucha Basic (FAQ) page.
 
 ## Wireframes
 
-Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
+https://www.figma.com/file/tSHSEwpdza0rPbP0j2Z5eM/BUCHA-BUCHA
 
 ## Component Hierarchy
 
@@ -25,20 +25,22 @@ Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/u
 
 ### MVP/PostMVP
 
-The functionality will then be divided into two separate lists: MVP and PostMVP.  Carefully decide what is placed into your MVP, as the client will expect this functionality to be implemented upon project completion.  
-
 #### MVP 
-*These are examples only. Replace with your own MVP features.*
 
-- Find and use external api 
-- Render data on page 
-- Allow user to choose favorites 
+-Home Page: Create buttons that will route to each designated recipe category and .
+-Get request.
+-Post request.
+-Create new flavor recipes and update Airtable through a form
+-CSS layout
+
 
 #### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
 
-- Add second API
-- Use local storage to save user favorites
+-Incorporate a search bar to find recipes by ingredient
+-Incoporate a Like/Dislike button & counter for each recipe
+-Bucha Basics: Create a modal box for each kombucha fact
+-Put Request
+-
 
 ## Project Schedule
 
@@ -46,17 +48,23 @@ The functionality will then be divided into two separate lists: MVP and PostMVP.
 |---|---| ---|
 |May 6| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
 |May 7| Project Approval | Incomplete
-|May 8-9 | Airtable Setup | Incomplete
-|May 10| Core Application Structure (HTML, CSS, etc.) | Incomplete
+|May 8-9 | Airtable Setup & Draft Text Content | Incomplete
+|May 10| Create React App & Intall All Dependencies| Incomplete
 |May 10 | Pseudocode / actual code | Incomplete
 |May 12| Initial Clickable Model  | Incomplete
-|May 13| MVP | Incomplete
+|May 13| CSS | Incomplete
 |May 14| Presentations | Incomplete
 
 ## Timeframes
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
+| AirTable | H | 3hrs| 3.5hrs | 3.5hrs |
+| Draft Text Content | H | 3hrs| 2.5hrs | 2.5hrs |
+| Data | H | 3hrs| 3.5hrs | 3.5hrs |
+| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
+| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
+| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
 | Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
 | Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
 | Total | H | 6hrs| 5hrs | 5hrs |
