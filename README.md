@@ -41,6 +41,7 @@ https://www.figma.com/file/tSHSEwpdza0rPbP0j2Z5eM/BUCHA-BUCHA
 -Bucha Basics: Create a modal box for each kombucha fact
 -Put Request
 -Add question form to Bucha Basic page.
+-Altering the recipe layout from grid to mosaic.
 
 
 ## Project Schedule
@@ -50,13 +51,12 @@ https://www.figma.com/file/tSHSEwpdza0rPbP0j2Z5eM/BUCHA-BUCHA
 |May 6| Prompt / Wireframes / Timeframes | Incomplete
 |May 7| Project Approval | Incomplete
 |May 8-9 | Airtable Setup & Draft Text Content | Incomplete
-|May 10| Create React App & Intall All Dependencies| Incomplete
-|May 10 | Pseudocode | Incomplete
+|May 10 | Airtable Setup & Draft Text Content Cont. | Incomplete
 |May 10  | Creating Components | Incomplete
 |May 11 | Creating Components Cont. | Incomplete
 |May 11 | Get & Post Requests | Incomplete
 |May 12|  CSS  | Incomplete
-|May 13| CSS MVP Cont. / PMVP | Incomplete
+|May 13| CSS MVP Cont. | Incomplete
 |May 14| Presentations | Incomplete
 
 ## Timeframes
@@ -65,13 +65,17 @@ https://www.figma.com/file/tSHSEwpdza0rPbP0j2Z5eM/BUCHA-BUCHA
 | --- | :---: |  :---: | :---: | :---: |
 | AirTable Setup | H | 2hrs| 0hrs | 0hrs |
 | Draft Text Content | M-H  | 2hrs| 0hrs | 0hrs |
-| Data | H | 3hrs| 0hrs | 0hrs |
-|  | H | 3hrs| 0hrs | 0hrs |
-|  | H | 3hrs| 0hrs | 0hrs |
-|  | H | 3hrs| 0hrs | 0hrs |
-|  | H | 3hrs| 0hrs | 0hrs |
-|  | H | 0hrs| 0hrs | 0hrs |
-| Total | H | 6hrs| 0hrs | 0hrs |
+| Nav / Header / Footer Creation | H | 5hrs| 0hrs | 0hrs |
+| Rendering Data -pg1 | H | 3hrs| 0hrs | 0hrs |
+| Rendering Data - pg2  | H | 3hrs| 0hrs | 0hrs |
+| Rendering Data - pg3  | H | 3hrs| 0hrs | 0hrs |
+| Form Creation | H | 3hrs| 0hrs | 0hrs |
+| Data Creation & Update - pg1 | H | 3hrs| 0hrs | 0hrs |
+| Data Creation & Update - pg2| H | 3hrs| 0hrs | 0hrs |
+| Data Creation & Update - pg3 | H | 3hrs| 0hrs | 0hrs |
+| CSS  | H | 8hrs| 0hrs | 0hrs |
+
+| Total | H | 38hrs| 0hrs | 0hrs |
 
 ## SWOT Analysis
 
