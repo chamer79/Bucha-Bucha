@@ -51,7 +51,7 @@ https://www.figma.com/file/tSHSEwpdza0rPbP0j2Z5eM/BUCHA-BUCHA
 
 #### MVP 
 
--Home Page: Create buttons that will route to each designated recipe category and FAQ <br
+-Home Page: Create buttons that will route to each designated recipe category and FAQ <br>
 -Get request.<br>
 -Post request.<br>
 -Create new flavor recipes and update Airtable through a form.<br>
@@ -103,10 +103,10 @@ https://www.figma.com/file/tSHSEwpdza0rPbP0j2Z5eM/BUCHA-BUCHA
 
 ## SWOT Analysis
 
-### Strengths:
+### Strengths:  Well organized, and good at working in a timely matter.
 
-### Weaknesses:
+### Weaknesses:  Being obsessed (spending too much time) with troubleshooting a problem by myself. (Had an instance where I lost track of time trying to troubleshoot a problen during my last project.) Need to set a timer for troubleshooting; if I am unable to correct it withing the designated time, I wll seek assistance.
 
-### Opportunities:
+### Opportunities:  Incorporating some of my PMVPs; if not all of them.
 
-### Threats:
+### Threats:  Going down that 'troubleshooting obsessed' rabbit hole.  
