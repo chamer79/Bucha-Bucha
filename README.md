@@ -6,20 +6,20 @@ Bucha Bucha
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and/or functionality.
+Bucha Bucha is a React based app that uses an API from Airtable. Users will be able to view and post recipes (based on category) for flavoring a home brewed kombucha during the second fermentaion cycle.  Users will also be able to view information on kombuca basics -   
 
 ## Wireframes
 
 Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
 
 ## Component Hierarchy
+
 Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/uploads/users/1795/posts/30352/image/GettingStartedWithReduxTutorial-React-Component-Structure.png) as an example.
 
 ## API and Data Sample
 
-Show us a snippet of JSON returned by your Airtable (you can find it under the API documentation) so we know you can access it and get the info you need. This __must__ be properly formatted. An example is below:
-
 ```json
+
 
 ```
 
@@ -44,13 +44,14 @@ The functionality will then be divided into two separate lists: MVP and PostMVP.
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|July 10-12| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|July 13| Project Approval | Incomplete
-|July 13| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|July 14| Pseudocode / actual code | Incomplete
-|July 15| Initial Clickable Model  | Incomplete
-|July 16| MVP | Incomplete
-|July 17| Presentations | Incomplete
+|May 6| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
+|May 7| Project Approval | Incomplete
+|May 8-9 | Airtable Setup | Incomplete
+|May 10| Core Application Structure (HTML, CSS, etc.) | Incomplete
+|May 10 | Pseudocode / actual code | Incomplete
+|May 12| Initial Clickable Model  | Incomplete
+|May 13| MVP | Incomplete
+|May 14| Presentations | Incomplete
 
 ## Timeframes
 
