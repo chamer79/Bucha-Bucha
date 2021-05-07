@@ -88,7 +88,7 @@ https://www.figma.com/file/tSHSEwpdza0rPbP0j2Z5eM/BUCHA-BUCHA
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | AirTable Setup | H | 2hrs| 1 hrs | 1hrs |
-| Draft Text Content | M-H  | 2hrs| 0hrs | 0hrs |
+| Draft Text Content | M-H  | 2hrs| 1hrs | 1hrs |
 | Nav / Header / Footer Creation | H | 5hrs| 0hrs | 0hrs |
 | Rendering Data -pg1 | H | 3hrs| 0hrs | 0hrs |
 | Rendering Data - pg2  | H | 3hrs| 0hrs | 0hrs |
@@ -99,7 +99,7 @@ https://www.figma.com/file/tSHSEwpdza0rPbP0j2Z5eM/BUCHA-BUCHA
 | Data Creation & Update - pg3 | H | 3hrs| 0hrs | 0hrs |
 | CSS  | H | 8hrs| 0hrs | 0hrs |
 
-| Total | H | 39hrs| 0hrs | 0hrs |
+| Total | H | 39hrs| 2hrs | 2hrs |
 
 ## SWOT Analysis
 
