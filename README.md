@@ -14,8 +14,7 @@ https://www.figma.com/file/tSHSEwpdza0rPbP0j2Z5eM/BUCHA-BUCHA
 
 ## Component Hierarchy
 
-![image](https://user-images.githubusercontent.com/59977555/117399301-4344a400-aece-11eb-9172-28c21e2df1b9.png)
-
+![image](https://user-images.githubusercontent.com/59977555/117399359-6a02da80-aece-11eb-9539-dec75d9ac5dc.png)
 ## API and Data Sample
 
 ```json
