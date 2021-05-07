@@ -51,26 +51,20 @@ https://www.figma.com/file/tSHSEwpdza0rPbP0j2Z5eM/BUCHA-BUCHA
 
 #### MVP 
 
--Home Page: Create buttons that will route to each designated recipe category and FAQ
-
--Get request.
-
--Post request.
-
--Create new flavor recipes and update Airtable through a form
-
--FAQ (Bucha Basic) page
-
+-Home Page: Create buttons that will route to each designated recipe category and FAQ <br
+-Get request.<br>
+-Post request.<br>
+-Create new flavor recipes and update Airtable through a form.<br>
 -Style with CSS
 
 
 #### PostMVP  
 
--Incorporate a search bar to find recipes by ingredient
--Incoporate a Like/Dislike button & counter for each recipe
--Bucha Basics: Create a modal box for each kombucha fact
--Put Request
--Add question form to Bucha Basic page.
+-Incorporate a search bar to find recipes by ingredient.<br>
+-Incoporate a Like/Dislike button & counter for each recipe.<br>
+-Bucha Basics: Create a modal box for each kombucha fact.<br>
+-Put Request.<br>
+-Add question form to Bucha Basic page.<br>
 -Altering the recipe layout from grid to mosaic.
 
 
