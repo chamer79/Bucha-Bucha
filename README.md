@@ -31,7 +31,8 @@ Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/u
 -Get request.
 -Post request.
 -Create new flavor recipes and update Airtable through a form
--CSS layout
+-FAQ (Bucha Basic) page
+-Style with CSS
 
 
 #### PostMVP  
@@ -40,34 +41,38 @@ Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/u
 -Incoporate a Like/Dislike button & counter for each recipe
 -Bucha Basics: Create a modal box for each kombucha fact
 -Put Request
--
+-Add question form to Bucha Basic page.
+
 
 ## Project Schedule
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|May 6| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
+|May 6| Prompt / Wireframes / Timeframes | Incomplete
 |May 7| Project Approval | Incomplete
 |May 8-9 | Airtable Setup & Draft Text Content | Incomplete
 |May 10| Create React App & Intall All Dependencies| Incomplete
-|May 10 | Pseudocode / actual code | Incomplete
-|May 12| Initial Clickable Model  | Incomplete
-|May 13| CSS | Incomplete
+|May 10 | Pseudocode | Incomplete
+|May 10  | Creating Components | Incomplete
+|May 11 | Creating Components Cont. | Incomplete
+|May 11 | Get & Post Requests | Incomplete
+|May 12|  CSS  | Incomplete
+|May 13| CSS MVP Cont. / PMVP | Incomplete
 |May 14| Presentations | Incomplete
 
 ## Timeframes
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| AirTable | H | 3hrs| 3.5hrs | 3.5hrs |
-| Draft Text Content | H | 3hrs| 2.5hrs | 2.5hrs |
-| Data | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| AirTable Setup | H | 2hrs| 0hrs | 0hrs |
+| Draft Text Content | M-H  | 2hrs| 0hrs | 0hrs |
+| Data | H | 3hrs| 0hrs | 0hrs |
+|  | H | 3hrs| 0hrs | 0hrs |
+|  | H | 3hrs| 0hrs | 0hrs |
+|  | H | 3hrs| 0hrs | 0hrs |
+|  | H | 3hrs| 0hrs | 0hrs |
+|  | H | 0hrs| 0hrs | 0hrs |
+| Total | H | 6hrs| 0hrs | 0hrs |
 
 ## SWOT Analysis
 
