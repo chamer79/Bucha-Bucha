@@ -72,8 +72,8 @@ https://www.figma.com/file/tSHSEwpdza0rPbP0j2Z5eM/BUCHA-BUCHA
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|May 6| Prompt / Wireframes / Timeframes | Incomplete
-|May 7| Project Approval | Incomplete
+|May 6| Prompt / Wireframes / Timeframes | Complete
+|May 7| Project Approval | Complete
 |May 8-9 | Airtable Setup & Draft Text Content | Incomplete
 |May 10 | Airtable Setup & Draft Text Content Cont. | Incomplete
 |May 10  | Creating Components | Incomplete
@@ -87,7 +87,7 @@ https://www.figma.com/file/tSHSEwpdza0rPbP0j2Z5eM/BUCHA-BUCHA
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| AirTable Setup | H | 2hrs| 0hrs | 0hrs |
+| AirTable Setup | H | 2hrs| 1 hrs | 1hrs |
 | Draft Text Content | M-H  | 2hrs| 0hrs | 0hrs |
 | Nav / Header / Footer Creation | H | 5hrs| 0hrs | 0hrs |
 | Rendering Data -pg1 | H | 3hrs| 0hrs | 0hrs |
