@@ -4,18 +4,26 @@ import { Link, Route } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import './App.css';
-import Nav from "./components/Nav";
 import Footer from "./components/Footer"
+import Fruit from "./components/Fruit"
+import Nav from "./components/Nav";
 
 
 function App() {
+  const [toggleFetch, setToggleFetch] = useState(false);
   const [visible, setVisible] = useState(false);
-  
-  
+  const [recipes, setRecipes] = useState([]);
+    
   //=================================
   //  GET Request
   //=================================
-
+  useEffect(() => {
+    const fetchRecipes = async () => {
+      const resp = await axios.get(baseURL, config);
+      setRecipes(resp.data.records);
+    }
+    fetchRecipes();
+  }, [toggleFetch])
 
   //=================================
   //  Passing Nav & Footer
@@ -32,7 +40,10 @@ function App() {
         <section>
           <div className="dropdown" className={visible ? "visible" : "invisible"}>
             <button onClick={() => setVisible(!visible)}>Categories</button>
-            <Link to="/Fruits">Fruits</Link>
+            <Link to="/Fruits">
+              Fruits
+              <Route path="/Fruits"></Route>
+              </Link>
             <Link to="/Herbs">Herbs &amp; Spices</Link>
             <Link to="/Micsllaneous">Micsllaneous</Link>
           </div>
