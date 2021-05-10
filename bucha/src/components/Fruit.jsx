@@ -1,7 +1,4 @@
-
 import { useParams } from "react-router-dom";
-
-
 
 function Fruit(props) {
   const params = useParams();
@@ -10,7 +7,12 @@ function Fruit(props) {
   console.log(matchingFlavors);
   return (
     <div>
-     
+      <h3>{matchingFlavors && matchingFlavors.name}</h3>
+      <p>Batch Size: </p>
+      <p>{matchingFlavors && matchingFlavors.batchSize}</p>
+      <p>Ingredients: </p><br />
+      <p>{matchingFlavors && matchingFlavors.ingredients}</p>
+      <p></p>
     </div>
   )
 }

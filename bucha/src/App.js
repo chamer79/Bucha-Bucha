@@ -20,17 +20,13 @@ function App() {
   //=================================
   useEffect(() => {
     const fetchFlavors = async () => {
-    const baseURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/flavors`;
-    const config = {
-      headers: {
-      Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`
-      }
-    };
-    const resp = await axios.get(baseURL, config);
-    setFlavors(resp.data.records);
+       const resp = await axios.get(baseURL, config);
+      setFlavors(resp.data.records);
     }
     fetchFlavors();
   }, [toggleFetch])
+
+  // setToggleFetch((curr) => !curr)
 
   //=================================
   //  Passing Nav & Footer
@@ -51,14 +47,26 @@ function App() {
             <Link to="/show/herb-spice">Herbs &amp; Spices</Link>
             <Link to="/show/misc">Micsllaneous</Link>
           </div>
-          <button>Bucha Basics</button>
+          <button >Bucha Basics
+          </button>
         </section>
         <Route path="/show/:type">
-          <Fruit flavors={flavors} />
-          {/* <Herbs flavors={flavors} />
-          <Micsllaneous flavors={flavors} /> */}
+          <Fruit flavors={flavors}
+            // setToggleFetch={setToggleFetch}
+          />
         </Route>
-   
+        <Route>
+          <Herbs flavors={flavors}
+           // setToggleFetch={setToggleFetch}
+          />
+        </Route>
+        <Route>
+          <Micsllaneous flavors={flavors}
+          // setToggleFetch={setToggleFetch}
+          />
+        </Route>
+          
+        <Route path="/bucha-basics"></Route>
       </main>
       <Footer />
     </div>
