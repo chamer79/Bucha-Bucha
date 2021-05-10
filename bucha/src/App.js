@@ -12,17 +12,17 @@ import Nav from "./components/Nav";
 function App() {
   const [toggleFetch, setToggleFetch] = useState(false);
   const [visible, setVisible] = useState(false);
-  const [recipes, setRecipes] = useState([]);
+  const [flavors, setFlavors] = useState([]);
     
   //=================================
   //  GET Request
   //=================================
   useEffect(() => {
-    const fetchRecipes = async () => {
+    const fetchFlavors = async () => {
       const resp = await axios.get(baseURL, config);
-      setRecipes(resp.data.records);
+      setFlavors(resp.data.records);
     }
-    fetchRecipes();
+    fetchFlavors();
   }, [toggleFetch])
 
   //=================================
@@ -42,7 +42,12 @@ function App() {
             <button onClick={() => setVisible(!visible)}>Categories</button>
             <Link to="/Fruits">
               Fruits
-              <Route path="/Fruits"></Route>
+             {/* {flavors.map((flavor) => (
+               <Link to={`/flavor/${flavor.type}`}>
+                 <Fruit flavors={flavor}
+                   setToggleFetch={setToggleFetch}/>
+              </Link>
+             ))} */}
               </Link>
             <Link to="/Herbs">Herbs &amp; Spices</Link>
             <Link to="/Micsllaneous">Micsllaneous</Link>
