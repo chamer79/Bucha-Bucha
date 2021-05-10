@@ -1,29 +1,21 @@
-import { baseURL, config } from "./services";
-import { Component } from "react";
+// import { baseURL, config } from "./services";
+// import { Component } from "react";
 import { Link, Route } from "react-router-dom";
-import { useEffect, useState } from "react";
-import axios from "axios";
+import {  useState } from "react";
+// import axios from "axios";
 import './App.css';
 import Footer from "./components/Footer"
-import Fruit from "./components/Fruit"
 import Nav from "./components/Nav";
 
 
 function App() {
   const [toggleFetch, setToggleFetch] = useState(false);
   const [visible, setVisible] = useState(false);
-  const [flavors, setFlavors] = useState([]);
     
   //=================================
   //  GET Request
   //=================================
-  useEffect(() => {
-    const fetchFlavors = async () => {
-      const resp = await axios.get(baseURL, config);
-      setFlavors(resp.data.records);
-    }
-    fetchFlavors();
-  }, [toggleFetch])
+ 
 
   //=================================
   //  Passing Nav & Footer
@@ -40,15 +32,7 @@ function App() {
         <section>
           <div className="dropdown" className={visible ? "visible" : "invisible"}>
             <button onClick={() => setVisible(!visible)}>Categories</button>
-            <Link to="/Fruits">
-              Fruits
-             {/* {flavors.map((flavor) => (
-               <Link to={`/flavor/${flavor.type}`}>
-                 <Fruit flavors={flavor}
-                   setToggleFetch={setToggleFetch}/>
-              </Link>
-             ))} */}
-              </Link>
+            <Link to="/Fruit">Fruits</Link>
             <Link to="/Herbs">Herbs &amp; Spices</Link>
             <Link to="/Micsllaneous">Micsllaneous</Link>
           </div>
