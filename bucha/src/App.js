@@ -1,14 +1,17 @@
 import { baseURL, config } from "./services";
-import { Menu, Dropdown } from "antd";
-import { DownOutlined } from '@ant-design/icons';
-import { useEffect } from "react";
+import { Component } from "react";
+import { Link, Route } from "react-router-dom";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import './App.css';
-import { Link, Route } from "react-router-dom";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer"
 
+
 function App() {
+  const [visible, setVisible] = useState(false);
+  
+  
   //=================================
   //  GET Request
   //=================================
@@ -17,8 +20,7 @@ function App() {
   //=================================
   //  Passing Nav & Footer
   // ------------------------
-  //  Creating Button  Importing
-  //   buttons 
+  //  Creating Dropdown & Button  
   //=================================
   return (
     <div className="App">
@@ -26,11 +28,16 @@ function App() {
       <Route exact path="/"></Route>
       <main>
         <h2>Flavor. Ferment. Enjoy.</h2>
-        <p>Welcome! Bucha Bucha is a community where people can share, get inspired, or experiment with various recipes to flavor home brewed kombuchas.</p>
-        <div>
- 
+        <p>Welcome! Bucha Bucha is a community where people can share, get inspired, or experiment with various recipes to flavor home brewed kombucha.</p>
+        <section>
+          <div className="dropdown" className={visible ? "visible" : "invisible"}>
+            <button onClick={() => setVisible(!visible)}>Categories</button>
+            <Link to="/Fruits">Fruits</Link>
+            <Link to="/Herbs">Herbs &amp; Spices</Link>
+            <Link to="/Micsllaneous">Micsllaneous</Link>
+          </div>
           <button>Bucha Basics</button>
-        </div>
+        </section>
       </main>
       <Footer />
     </div>
