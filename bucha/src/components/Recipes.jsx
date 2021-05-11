@@ -7,16 +7,20 @@ function Recipes(props) {
   const matchingFlavors = props.flavors.filter((flavor) => flavor.fields.type === params.type)
   console.log(matchingFlavors);
   return (
-    <div>
+    <main>
       {matchingFlavors.map((flavor) => {
         return (
-          <div>
+          <section className="recipe">
             <h3>{flavor.fields.name}</h3>
-          </div>
+            <p>Batch Size: {flavor.fields.batchSize}</p>
+            <ul>Ingredients:
+             <li> {flavor.fields.ingredients}</li>
+            </ul>
+            <p>Days: {flavor.fields.days}</p>
+          </section>
         )
-      } )}
-      
-    </div>
+      })} 
+    </main>
   )
 }
 
