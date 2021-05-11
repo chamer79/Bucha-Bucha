@@ -1,9 +1,9 @@
 function Footer() {
   return (
-    <section>
+    <footer>
       <p> &copy; Bucha Bucha | Carri-anne Hamer 2021</p>
-    </section>
-  )
+    </footer>
+  );
 }
 
 export default Footer;

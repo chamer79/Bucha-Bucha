@@ -25,9 +25,9 @@ function Recipes(props) {
           </section>
         );
       })}
-          <Route path="/post">
-        <Form   />
-          </Route>
+      <Route path="/post">
+        <Form />
+      </Route>
     </main>
   );
 }
