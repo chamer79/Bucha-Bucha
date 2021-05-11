@@ -14,7 +14,8 @@ https://www.figma.com/file/tSHSEwpdza0rPbP0j2Z5eM/BUCHA-BUCHA
 
 ## Component Hierarchy
 
-![image](https://user-images.githubusercontent.com/59977555/117399359-6a02da80-aece-11eb-9539-dec75d9ac5dc.png)
+![image](https://user-images.githubusercontent.com/59977555/117818373-87b9a200-b236-11eb-88bd-80511c03e461.png)
+
 ## API and Data Sample
 
 ```json
@@ -51,7 +52,7 @@ https://www.figma.com/file/tSHSEwpdza0rPbP0j2Z5eM/BUCHA-BUCHA
 
 #### MVP 
 
--Home Page: Create buttons that will route to each designated recipe category and FAQ <br>
+-Create components. <br>
 -Get request.<br>
 -Post request.<br>
 -Create new flavor recipes and update Airtable through a form.<br>
@@ -88,25 +89,21 @@ https://www.figma.com/file/tSHSEwpdza0rPbP0j2Z5eM/BUCHA-BUCHA
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | AirTable Setup | H | 2hrs| 1 hrs | 1hrs |
-| Draft Text Content | M-H  | 2hrs| 1hrs | 1hrs |
-| Nav / Header / Footer Creation | H | 5hrs| 0hrs | 0hrs |
-| Rendering Data -pg1 | H | 3hrs| 0hrs | 0hrs |
-| Rendering Data - pg2  | H | 3hrs| 0hrs | 0hrs |
-| Rendering Data - pg3  | H | 3hrs| 0hrs | 0hrs |
-| Form Creation | H | 4hrs| 0hrs | 0hrs |
-| Data Creation & Update - pg1 | H | 3hrs| 0hrs | 0hrs |
-| Data Creation & Update - pg2| H | 3hrs| 0hrs | 0hrs |
-| Data Creation & Update - pg3 | H | 3hrs| 0hrs | 0hrs |
+| Draft Text Content | M-H  | 2hrs| 1.5hrs | 1.5hrs |
+| Creating Components | H | 5hrs| 4hrs | 0hrs |
+| Rendering Data | H | 6hrs| 8hrs | 8hrs |
+| Form Creation | H | 4hrs| 1hrs | 0hrs |
+| Data Creation & Update | H | 6hrs| 0hrs | 0hrs |
 | CSS  | H | 8hrs| 0hrs | 0hrs |
 
-| Total | H | 39hrs| 2hrs | 2hrs |
+| Total | H | 33hrs| 11.5hrs | 2hrs |
 
 ## SWOT Analysis
 
 ### Strengths:  Well organized, and good at working in a timely matter.
 
-### Weaknesses:  Being obsessed (spending too much time) with troubleshooting a problem by myself. (Had an instance where I lost track of time trying to troubleshoot a problen during my last project.) Need to set a timer for troubleshooting; if I am unable to correct it withing the designated time, I wll seek assistance.
+### Weaknesses:  Being obsessed (spending too much time) with troubleshooting a problem by myself. (Had an instance where I lost track of time trying to troubleshoot a problem during my last project.) Need to set a timer for troubleshooting; if I am unable to correct it withing the designated time, I wll seek assistance.
 
 ### Opportunities:  Incorporating some of my PMVPs; if not all of them.
 
-### Threats:  Going down that 'troubleshooting obsessed' rabbit hole.  
+### Threats:  Going down that 'troubleshooting obsessed' rabbit hole.  Covid vaccination recovery.
