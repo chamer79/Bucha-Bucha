@@ -24,30 +24,38 @@ function Form(props) {
   
   return (
     <form onSubmit={handleSubmit}>
-      <label htmlFor="name">Recipe's Name: </label>
+      <label htmlFor="name"></label>
       <input
+        className="recipe-name"
         type="text"
         id="name"
+        placeholder="Recipe's Name"
         value={name}
         onChange={(e) => setName(e.target.value)} />
-      <label htmlFor="batchSize">Batch Size: </label>
+      <label htmlFor="batchSize"></label>
       <input
+        className="batch-size"
         type="text"
         id="batchSize"
+        placeholder="Batch Size"
         value={batchSize}
         onChange={(e) => setBatchSize(e.target.value)} />
-      <label htmlFor="ingredients">Ingredients: </label>
+      <label htmlFor="ingredients"></label>
       <input
+        className="ingredients"
         type="text"
         id="ingredients"
+        placeholder="Ingredients"
         value={ingredients}
         onChange={(e) => setIngredients(e.target.value)} />
-      <label htmlFor="days">Fermentation Days: </label>
+      <label htmlFor="days"></label>
       <input
+        className="fermentation"
         type="text"
         id="days"
+        placeholder="Days for Fermentation"
         value={days}
-        onChange={(e) => setDays(e.target.value)} />
+        onChange={(e) => setDays(parseInt(e.target.value))} />
       <button>Submit</button>
       </form>
   )
