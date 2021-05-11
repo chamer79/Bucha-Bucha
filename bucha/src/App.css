@@ -63,13 +63,14 @@ footer {
   flex-direction: row wrap;
   justify-content: center;
 }
-.invisible a,
+.dropdown,
 .faq-button {
   background-color: rgba(243,240,230, .75);
+  
 }
 .dropdown {
   flex-direction: column;
-  border: 1px solid black;
+  border: none;
   /* box-sizing: border-box; */
 }
 .visible a {
@@ -78,4 +79,16 @@ footer {
 }
 .invisible a {
   display: none;
+}
+.faq-button {
+  margin : 0 20px;
+  border: none;
+  text-decoration: none;
+}
+
+/*==========================
+  Recipe Component
+==========================*/
+.recipe {
+  grid-template-columns: ;
 }
