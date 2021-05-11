@@ -1,10 +1,11 @@
 import { baseURL, config } from "../services";
 import { useState } from "react";
 import axios from "axios";
-import { useParams } from "react-router";
+
 
 function Form(props) {
   const [name, setName] = useState("");
+  const [type, setType] = useState("");
   const [batchSize, setBatchSize] = useState("");
   const [ingredients, setIngredients] = useState("");
   const [days, setDays] = useState("");
@@ -13,6 +14,7 @@ function Form(props) {
     e.preventDefault();
     const newRecipe = {
       name,
+      type,
       batchSize,
       ingredients,
       days,
@@ -29,14 +31,28 @@ function Form(props) {
         className="recipe-name"
         type="text"
         id="name"
+        required
         placeholder="Recipe's Name"
         value={name}
         onChange={(e) => setName(e.target.value)} />
+      <label htmlFor="type"></label>
+      <select
+        className="recipe-type"
+        id="type"
+        required
+        value={type}
+        onChange={(e) => setType(e.target.value)}>
+        <option selected disabled={type}>---</option>
+        <option value="fruit">Fruit</option>
+        <option value="herb-spice">Herbs &amp; Spices</option>
+        <option value="misc">Miscellaneous</option>  
+      </select>
       <label htmlFor="batchSize"></label>
       <input
         className="batch-size"
         type="text"
         id="batchSize"
+        required
         placeholder="Batch Size"
         value={batchSize}
         onChange={(e) => setBatchSize(e.target.value)} />
@@ -45,6 +61,7 @@ function Form(props) {
         className="ingredients"
         type="text"
         id="ingredients"
+        required
         placeholder="Ingredients"
         value={ingredients}
         onChange={(e) => setIngredients(e.target.value)} />
@@ -53,9 +70,10 @@ function Form(props) {
         className="fermentation"
         type="text"
         id="days"
-        placeholder="Days for Fermentation"
+        required
+        placeholder="Fermentation Time I.e: 2 days"
         value={days}
-        onChange={(e) => setDays(parseInt(e.target.value))} />
+        onChange={(e) => setDays(e.target.value)} />
       <button>Submit</button>
       </form>
   )

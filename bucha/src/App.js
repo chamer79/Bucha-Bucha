@@ -1,8 +1,9 @@
 import { baseURL, config } from "./services";
-import { Link, Route } from "react-router-dom";
+import { Route } from "react-router-dom";
 import {  useEffect, useState } from "react";
 import axios from "axios";
 import './App.css';
+import BuchaBasics from "./components/BuchaBasics";
 import Footer from "./components/Footer";
 import Form from "./components/Form";
 import Home from "./components/Home";
@@ -42,7 +43,9 @@ function App() {
             setToggleFetch={setToggleFetch}
           />
         </Route>
-        <Route path="/bucha-basics"></Route>
+        <Route path="/bucha-basics">
+          <BuchaBasics />
+        </Route>
       </main>
       <Footer />
     </div>

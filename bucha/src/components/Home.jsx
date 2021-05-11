@@ -19,7 +19,9 @@ function Home() {
           <Link to="/show/herb-spice">Herbs &amp; Spices</Link>
           <Link to="/show/misc">Micsllaneous</Link>
         </div>
-        <button>Bucha Basics</button>
+        <button>
+          <Link to="/bucha-basics">Bucha Basics</Link>
+        </button>
       </section>
     </>
   );
