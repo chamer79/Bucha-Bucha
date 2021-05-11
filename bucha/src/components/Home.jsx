@@ -7,12 +7,12 @@ function Home() {
   return (
     <>
       <h2>Flavor. Ferment. Enjoy.</h2>
-      <p>
+      <p className="intro">
         Welcome! Bucha Bucha is a community where people can share, get
         inspired, or experiment with various recipes to flavor home brewed
         kombucha.
       </p>
-      <section className ="home-buttons">
+      <div className ="home-buttons">
         <div className="dropdown" className={visible ? "visible" : "invisible"}>
           <button onClick={() => setVisible(!visible)}>Categories</button>
           <Link to="/show/fruit">Fruits</Link>
@@ -22,7 +22,7 @@ function Home() {
         <button className="faq-button">
           <Link to="/bucha-basics">Bucha Basics</Link>
         </button>
-      </section>
+      </div>
     </>
   );
 }
