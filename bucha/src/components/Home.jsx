@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 function Home() {
   const [visible, setVisible] = useState(false);
+  
   return (
     <>
       <h2>Flavor. Ferment. Enjoy.</h2>

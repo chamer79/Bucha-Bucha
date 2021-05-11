@@ -4,16 +4,15 @@ import {  useEffect, useState } from "react";
 import axios from "axios";
 import './App.css';
 import Footer from "./components/Footer";
+import Form from "./components/Form";
 import Home from "./components/Home";
 import Nav from "./components/Nav";
 import Recipes from "./components/Recipes"
-
 
 function App() {
   const [flavors, setFlavors] = useState([])
   const [toggleFetch, setToggleFetch] = useState(false);
   
-    
   //=================================
   //  GET Request
   //=================================
@@ -26,25 +25,23 @@ function App() {
   }, [toggleFetch])
 
   //=================================
-  //  Passing Nav & Footer
-  // ------------------------
-  //  Creating Dropdown & Button  
+  //  Passing Components
   //=================================
   return (
     <div className="App">
       <Nav />
+      <Route path="/post">
+        <Form flavor={flavors} setToggleFetch={setToggleFetch} />
+      </Route>
       <main>
       <Route exact path="/"> 
       <Home />
         </Route>
-          
         <Route path="/show/:type">
           <Recipes flavors={flavors}
             setToggleFetch={setToggleFetch}
           />
         </Route>
-        
-          
         <Route path="/bucha-basics"></Route>
       </main>
       <Footer />
