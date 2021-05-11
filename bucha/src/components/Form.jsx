@@ -20,7 +20,32 @@ function Form(props) {
   
   return (
     
-  )
+    <form onSubmit={handleSubmit}>
+      <label htmlFor="name"></label>
+      <input
+        type="text"
+        id="name"
+        value={name}
+        onChange={(e) => setName(e.target.value)} />
+      <label htmlFor="batchSize">Batch Size: </label>
+      <input
+        type="text"
+        id="batchSize"
+        value={batchSize}
+        onChange={(e) => setbatchSize(e.target.value)} />
+      <label htmlFor="ingredients"></label>
+      <input
+        type="text"
+        id="ingredients"
+        value={ingredients}
+        onChange={(e) => setIngredients(e.target.value)} />
+      <label htmlFor="days"></label>
+      <input
+        type="text"
+        id="days"
+        value={days}
+        onChange={(e) => setDays(e.target.valueAsNumber)} />
+    </form>
 }
 
 export default Form;

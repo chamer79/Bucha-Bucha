@@ -4,16 +4,15 @@ import {  useEffect, useState } from "react";
 import axios from "axios";
 import './App.css';
 import Footer from "./components/Footer";
-import Fruit from "./components/Fruit";
-import Herbs from "./components/Herbs";
-import Micsllaneous from "./components/Miscellaneous";
+import Home from "./components/Home";
 import Nav from "./components/Nav";
+import Recipes from "./components/Recipes"
 
 
 function App() {
   const [flavors, setFlavors] = useState([])
   const [toggleFetch, setToggleFetch] = useState(false);
-  const [visible, setVisible] = useState(false);
+  
     
   //=================================
   //  GET Request
@@ -26,8 +25,6 @@ function App() {
     fetchFlavors();
   }, [toggleFetch])
 
-  // setToggleFetch((curr) => !curr)
-
   //=================================
   //  Passing Nav & Footer
   // ------------------------
@@ -36,35 +33,17 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      <Route exact path="/"></Route>
       <main>
-        <h2>Flavor. Ferment. Enjoy.</h2>
-        <p>Welcome! Bucha Bucha is a community where people can share, get inspired, or experiment with various recipes to flavor home brewed kombucha.</p>
-        <section>
-          <div className="dropdown" className={visible ? "visible" : "invisible"}>
-            <button onClick={() => setVisible(!visible)}>Categories</button>
-            <Link to="/show/fruit">Fruits</Link>
-            <Link to="/show/herb-spice">Herbs &amp; Spices</Link>
-            <Link to="/show/misc">Micsllaneous</Link>
-          </div>
-          <button >Bucha Basics
-          </button>
-        </section>
+      <Route exact path="/"> 
+      <Home />
+        </Route>
+          
         <Route path="/show/:type">
-          <Fruit flavors={flavors}
-            // setToggleFetch={setToggleFetch}
+          <Recipes flavors={flavors}
+            setToggleFetch={setToggleFetch}
           />
         </Route>
-        <Route>
-          <Herbs flavors={flavors}
-           // setToggleFetch={setToggleFetch}
-          />
-        </Route>
-        <Route>
-          <Micsllaneous flavors={flavors}
-          // setToggleFetch={setToggleFetch}
-          />
-        </Route>
+        
           
         <Route path="/bucha-basics"></Route>
       </main>
