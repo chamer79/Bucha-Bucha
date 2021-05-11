@@ -1,7 +1,6 @@
 import { Route } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import Form from "./Form";
-import SubNav from "./SubNav";
 
 function Recipes(props) {
   const params = useParams();
@@ -10,17 +9,16 @@ function Recipes(props) {
     (flavor) => flavor.fields.type === params.type
   );
   return (
-    <main>
-      <SubNav />
+    <div className="recipe-data">
       {matchingFlavors.map((flavor) => {
         return (
-          <section className="recipe">
+          <section className="recipes">
             <h3>{flavor.fields.name}</h3>
             <p>Batch Size: {flavor.fields.batchSize}</p>
-            <ul>
-              Ingredients:
-              <li> {flavor.fields.ingredients}</li>
-            </ul>
+            {/* <ul> */}
+            Ingredients:
+            {flavor.fields.ingredients}
+            {/* </ul> */}
             <p>Days: {flavor.fields.days}</p>
           </section>
         );
@@ -28,7 +26,7 @@ function Recipes(props) {
       <Route path="/post">
         <Form />
       </Route>
-    </main>
+    </div>
   );
 }
 

@@ -24,6 +24,7 @@ function Form(props) {
   };
 
   return (
+    <main>
     <form onSubmit={handleSubmit}>
       <label htmlFor="name"></label>
       <input
@@ -61,15 +62,17 @@ function Form(props) {
         onChange={(e) => setBatchSize(e.target.value)}
       />
       <label htmlFor="ingredients"></label>
-      <input
+      <textarea
         className="ingredients"
-        type="text"
         id="ingredients"
-        required
+         required
+        columns="30"
+         row="5"
         placeholder="Ingredients"
         value={ingredients}
         onChange={(e) => setIngredients(e.target.value)}
-      />
+        >
+        </textarea>
       <label htmlFor="days"></label>
       <input
         className="fermentation"
@@ -81,7 +84,14 @@ function Form(props) {
         onChange={(e) => setDays(e.target.value)}
       />
       <button>Submit</button>
-    </form>
+      </form>
+      <div className="spice-image">
+        <img
+          src="https://images.unsplash.com/photo-1581600140682-d4e68c8cde32?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
+          alt="spices"
+        />
+      </div>
+    </main>
   );
 }
 export default Form;
