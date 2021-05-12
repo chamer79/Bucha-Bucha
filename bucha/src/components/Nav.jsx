@@ -10,12 +10,16 @@ function Nav() {
         <h1>BUCHA BUCHA</h1>
       </Link>
       <nav>
-        <div className="dropdown" className={visible ? "visible" : "invisible"}>
+          <Link to="/show/fruit">Fruits</Link>
+          <Link to="/show/herb-spice">Herbs &amp; Spices</Link>
+          <Link to="/show/misc">Micsllaneous</Link>
+       
+        {/* <div className="dropdown" className={visible ? "visible" : "invisible"}>
           <button onClick={() => setVisible(!visible)}>Recipes</button>
           <Link to="/show/fruit">Fruits</Link>
           <Link to="/show/herb-spice">Herbs &amp; Spices</Link>
           <Link to="/show/misc">Micsllaneous</Link>
-        </div>
+        </div> */}
         <Link to="/bucha-basics">Bucha Basics</Link>
         <Link to="/post">Post Recipe</Link>
       </nav>
