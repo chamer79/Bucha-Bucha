@@ -1,8 +1,11 @@
+import { Fragment } from "react";
 import { useParams } from "react-router-dom";
 import { useState } from "react";
 import Button from "react-bootstrap/Button";
-import RecipeModal from "./RecipeModal";
-import { Modal } from "bootstrap";
+import Modal from "react-bootstrap/Modal";
+import ModalBody from "react-bootstrap/ModalBody";
+import ModalHeader from "react-bootstrap/ModalHeader";
+import ModalTitle from "react-bootstrap/ModalTitle";
 
 
 function Recipes(props) {
@@ -20,28 +23,31 @@ function Recipes(props) {
     <div>
       {matchingFlavors.map((flavor) => {
         return (
-          <Button variant="primary" onClick={handleShow}>
-            {flavor.fields.name}
-          </Button>
-          <Modal show={show} onHide={handleClose}>
-            <Modal.Header closeButton>
-              <Modal.Title>
-                {flavor.fields.name}
-                </Modal.Title>
-            </Modal.Header>
-            <Modal.Body>
-            <p>Batch Size: {flavor.fields.batchSize}</p>
-            <ul>
-              Ingredients:
+          <Fragment>
+            <Button variant="primary" onClick={handleShow} centered>
+              <h3>{flavor.fields.name}</h3>
+            </Button>
+            <Modal show={show} onHide={handleClose}>
+              <ModalHeader closeButton>
+                <ModalTitle>
+                  {flavor.fields.name}
+                </ModalTitle>
+              </ModalHeader>
+              <ModalBody>
+                <p>Batch Size: {flavor.fields.batchSize}</p>
+                <ul>
+                  Ingredients:
               {flavor.fields.ingredients.split("\n")}
-              {/* {console.log(flavor.fields.ingredients.split("\n"))} */}
-            </ul>
-            <p>Days: {flavor.fields.days}</p>
-            </Modal.Body>
-          </Modal>
+                  {/* {console.log(flavor.fields.ingredients.split("\n"))} */}
+                </ul>
+                <p>Days: {flavor.fields.days}</p>
+              </ModalBody>
+            </Modal>
+          </Fragment>
         )
       })}
-      </div>
-    )
+    </div>
+  )
+}
 
 export default Recipes;
