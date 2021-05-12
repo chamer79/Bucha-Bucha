@@ -12,7 +12,7 @@ function Nav() {
         </Link>
       </nav>
       <div className="sub-nav">
-        <div
+        {/* <div
           className="dropdown2"
           className={visible ? "visible" : "invisible"}
         >
@@ -21,7 +21,7 @@ function Nav() {
           <Link to="/show/herb-spice">Herbs &amp; Spices</Link>
           <Link to="/show/misc">Micsllaneous</Link>
           <Link to="/bucha-basics">Bucha Basics</Link>
-        </div>
+        </div> */}
         <Link to="/post">Post Recipe</Link>
       </div>
     </header>
