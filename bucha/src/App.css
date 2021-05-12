@@ -28,11 +28,12 @@ header {
   background-size: cover;
   height: 150px;
   margin: 0 auto;
-  padding: 0 auto;
+  padding: 50px 50px 0 50px;
 }
 h1 {
   color: #000000;
   font-size: 40px;
+  text-align: right;
 }
 a,
 .visible a {
@@ -40,11 +41,20 @@ a,
   color: #000000;
 }
 nav {
-  text-align: right;
-  padding: 50px 50px 0 50px;
 }
-.sub-nav {
-  justify-content: flex-end;
+.dropdown {
+}
+background-color: rgba(243, 240, 230, 0.75);
+.dropdown {
+  flex-direction: column;
+  border: none;
+}
+.visible a {
+  display: block;
+  color: #000000;
+}
+.invisible a {
+  display: none;
 }
 main {
   margin: 75px 0 70px;
@@ -67,19 +77,18 @@ footer {
   align-content: center;
   justify-content: space-around;
 }
-.home-buttons {
+/* .home-buttons {
   display: flex;
   flex-direction: row wrap;
   justify-content: center;
-}
-.dropdown,
+} */
+/* .dropdown,
 .faq-button {
   background-color: rgba(243, 240, 230, 0.75);
 }
 .dropdown {
   flex-direction: column;
   border: none;
-  /* box-sizing: border-box; */
 }
 .visible a {
   display: block;
@@ -87,12 +96,12 @@ footer {
 }
 .invisible a {
   display: none;
-}
-.faq-button {
+} */
+/* .faq-button {
   margin: 0 20px;
   border: none;
   text-decoration: none;
-}
+} */
 
 /*==========================
   Recipe Component
@@ -163,7 +172,7 @@ li {
 @media screen and (max-width: 670px) {
   h1{
     font-size: 30px;
-    padding: 30px 0 0;
+    padding: 30px 20px 0;
     letter-spacing: 1px;
   }
   h2{

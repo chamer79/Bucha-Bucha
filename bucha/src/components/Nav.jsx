@@ -6,24 +6,24 @@ function Nav() {
 
   return (
     <header className="header">
-      <nav>
         <Link to="/">
           <h1>BUCHA BUCHA</h1>
         </Link>
-      </nav>
+      <nav>
       <div className="sub-nav">
-        {/* <div
-          className="dropdown2"
+        <div
+          className="dropdown"
           className={visible ? "visible" : "invisible"}
-        >
-          <button onClick={() => setVisible(!visible)}>Explore</button>
+          >
+          <button onClick={() => setVisible(!visible)}>Recipes</button>
           <Link to="/show/fruit">Fruits</Link>
           <Link to="/show/herb-spice">Herbs &amp; Spices</Link>
           <Link to="/show/misc">Micsllaneous</Link>
-          <Link to="/bucha-basics">Bucha Basics</Link>
-        </div> */}
+        </div>
+        <Link to="/bucha-basics">Bucha Basics</Link>
         <Link to="/post">Post Recipe</Link>
       </div>
+          </nav>
     </header>
   );
 }
