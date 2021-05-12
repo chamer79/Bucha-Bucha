@@ -27,27 +27,31 @@ header{
   margin: 0 auto;
   padding: 0 auto;
 }
-nav {
-  text-align: right;
-  padding: 50px 20px 0 50px;
-}
-a, 
-.visible a {
-  text-decoration: none;
-}
 h1 {
   color: #000000;
   font-size: 40px;
 }
+a, 
+.visible a {
+  text-decoration: none;
+  color: #000000;
+}
+nav {
+  text-align: right;
+  padding: 50px 50px 0 50px;
+}
+.sub-nav {
+  justify-content: flex-end;
+}
 main {
-  margin: 55px 0;
-  /* display: grid;  */
+  margin: 75px 0 70px;
+ 
 }
 h2 {
   letter-spacing: 1px;
 }
 footer {
-  margin: 50px 0 0;
+  margin: 155px 0 10px;
   font-size: 12px;
 }
 /*==========================
@@ -93,20 +97,15 @@ footer {
   Recipe Component
 ==========================*/
 .recipe-data {
+  margin: 10px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 5px;
+  grid-gap: 2px;
 }
 .recipes {
-
-  /* display: grid;
-  grid-template-rows: repeat(3, 1fr) ;
-  grid-template-columns: 1fr; */
-  /* width: 300px;
-  height: 300px; */
-  /* box-sizing: border-box; */
+  margin: 20px;
   border: 2px solid #000000;
-  
+  font-size: 18px;
 }
 
 
@@ -114,19 +113,21 @@ footer {
   Form Component
 ==========================*/
 form {
-  display: flex;
-  flex-flow: column;
-  width: 400px;
-  height: 400px;
-  
+  margin: 30px 0 0;
+  display: flex; 
 }
-.recipe-name{
-  
+input {
+  /* display: block;
+  margin: 20px;
+  padding: 10px; */
+    display: flex;
+    flex-direction: column wrap;
+  align-content: center;
+  justify-content: space-around;
+
 }
 .spice-image {
+  margin: 30px 20px 0;
   display: flex;
-  margin:0 auto ;
-  
   justify-content: flex-end;
-  align-items: flex-start;
 }

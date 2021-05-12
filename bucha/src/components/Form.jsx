@@ -25,6 +25,12 @@ function Form(props) {
 
   return (
     <main>
+      <div className="spice-image">
+        <img
+          src="https://images.unsplash.com/photo-1581600140682-d4e68c8cde32?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
+          alt="spices"
+        />
+      </div>
     <form onSubmit={handleSubmit}>
       <label htmlFor="name"></label>
       <input
@@ -85,12 +91,6 @@ function Form(props) {
       />
       <button>Submit</button>
       </form>
-      <div className="spice-image">
-        <img
-          src="https://images.unsplash.com/photo-1581600140682-d4e68c8cde32?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
-          alt="spices"
-        />
-      </div>
     </main>
   );
 }
