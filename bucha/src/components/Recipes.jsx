@@ -15,10 +15,11 @@ function Recipes(props) {
           <section className="recipes">
             <h3>{flavor.fields.name}</h3>
             <p>Batch Size: {flavor.fields.batchSize}</p>
-            {/* <ul> */}
-            Ingredients:
-            {flavor.fields.ingredients}
-            {/* </ul> */}
+            <ul>
+              Ingredients:
+              {flavor.fields.ingredients.split("\n")}
+              {/* {console.log(flavor.fields.ingredients.split("\n"))} */}
+            </ul>
             <p>Days: {flavor.fields.days}</p>
           </section>
         );

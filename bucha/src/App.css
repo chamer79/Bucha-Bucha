@@ -84,31 +84,6 @@ footer {
   align-content: center;
   justify-content: space-around;
 }
-/* .home-buttons {
-  display: flex;
-  flex-direction: row wrap;
-  justify-content: center;
-} */
-/* .dropdown,
-.faq-button {
-  background-color: rgba(243, 240, 230, 0.75);
-}
-.dropdown {
-  flex-direction: column;
-  border: none;
-}
-.visible a {
-  display: block;
-  color: #000000;
-}
-.invisible a {
-  display: none;
-} */
-/* .faq-button {
-  margin: 0 20px;
-  border: none;
-  text-decoration: none;
-} */
 
 /*==========================
   Recipe Component
@@ -197,15 +172,6 @@ li {
     margin: 30px auto;
     width: auto;
   }
-  /* .home-buttons {
-    flex-flow: column wrap;
-    justify-content: center;
-    align-content: center;
-  }
-  .faq-button {
-    margin-top: 35px;
-    font-size: 18px;
-  } */
   .recipe-data {
     margin: 10px;
     grid-template-columns: repeat(1, 1fr);
