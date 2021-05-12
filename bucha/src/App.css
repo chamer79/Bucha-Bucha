@@ -28,9 +28,11 @@ header {
   background-size: cover;
   height: 150px;
   margin: 0 auto;
-  padding: 50px 50px 0 50px;
+  padding: 50px;
 }
 h1 {
+  margin: 0 auto;
+  padding: 30px 30px 0 30px;
   color: #000000;
   font-size: 40px;
   text-align: right;
@@ -41,6 +43,10 @@ a,
   color: #000000;
 }
 nav {
+  margin: 30px 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
 }
 .dropdown {
 }
@@ -61,6 +67,7 @@ main {
 }
 h2 {
   letter-spacing: 1px;
+  margin: 100px 0 0;
 }
 footer {
   margin: 155px 0 10px;
@@ -175,15 +182,22 @@ li {
     padding: 30px 20px 0;
     letter-spacing: 1px;
   }
+  nav{
+    padding: 15px 0;
+    flex-direction: column;
+    line-height: 35px;
+  
+  }
   h2{
+    margin: 200px auto 0;
     font-size: 23px;
     letter-spacing: 2px;
   }
   .intro {
-    margin: 0 auto 30px;
+    margin: 30px auto;
     width: auto;
   }
-  .home-buttons {
+  /* .home-buttons {
     flex-flow: column wrap;
     justify-content: center;
     align-content: center;
@@ -191,7 +205,7 @@ li {
   .faq-button {
     margin-top: 35px;
     font-size: 18px;
-  }
+  } */
   .recipe-data {
     margin: 10px;
     grid-template-columns: repeat(1, 1fr);
