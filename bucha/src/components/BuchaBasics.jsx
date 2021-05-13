@@ -35,12 +35,12 @@ function BuchaBasics() {
           Any books that you recommend for additional kombucha care and recipes?
         </p>
         <p className="answer">
-          - Highly recommend the 
+          - Highly recommend the   
           <a
-            href="https://www.amazon.com/Big-Book-Kombucha-Flavoring-Fermented/dp/161212433X"
+             href="https://www.amazon.com/Big-Book-Kombucha-Flavoring-Fermented/dp/161212433X"
             target="_blank"
           >
-             ‘The Big Book of Kombucha’
+             &nbsp;‘The Big Book of Kombucha’
           </a>
           . Not only does it have flavoring recipes, it teaches you the dos and
           don’ts of kombucha brewing, as well as how to identify a good scoby
