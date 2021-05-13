@@ -97,3 +97,39 @@ function Recipes(props) {
 }
 
 export default Recipes;
+
+
+/--------------
+/ Modal CSS
+/--------------
+button.modal-button.btn.btn-primary{
+ width: 250px;
+ display: flex;
+ flex-flow: row wrap;
+ justify-content: center;
+ align-content:center;
+ font-family: "Nunito Sans", sans-serif;
+ color: #000000;
+ background-color: transparent;
+ border: none;
+ box-shadow: 2px 2px 8px 1px;
+ margin: 20px 70px;
+ padding: 0 auto;
+}
+div.modal-header,
+div.modal-body {
+  padding-left: 40px;
+}
+div.modal-body {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+}
+ul.modal-list {
+padding-left: 17px;
+}
+li.modal-ingredients{
+  list-style-type: circle; 
+}
