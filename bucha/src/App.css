@@ -48,9 +48,8 @@ nav {
   flex-flow: row wrap;
   justify-content: space-around;
 }
-.dropdown {
-}
-background-color: rgba(243, 240, 230, 0.75);
+
+/* background-color: rgba(243, 240, 230, 0.75);
 .dropdown {
   flex-direction: column;
   border: none;
@@ -61,7 +60,7 @@ background-color: rgba(243, 240, 230, 0.75);
 }
 .invisible a {
   display: none;
-}
+} */
 main {
   margin: 75px 0 70px;
 }
@@ -98,6 +97,17 @@ footer {
   margin: 20px;
   border: 2px solid #000000;
   font-size: 18px;
+}
+.modal-button {
+ width: 250px;
+  font-family: "Nunito Sans", sans-serif;
+ color: #000000 !important;
+ background-color: transparent !important;
+ border: none !important;
+ margin: 20px 70px;
+ padding: 0 auto  !important;
+ display: flex;
+ justify-content: space-around;
 }
 
 /*==========================
