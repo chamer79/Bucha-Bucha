@@ -20,14 +20,14 @@ function Recipes(props) {
   const handleShow = () => setModalShow(true);
 
   return (
-    <div>
+    <div className="recipe-modal">
       {matchingFlavors.map((flavor) => {
         return (
           <Fragment>
             <Button variant="primary" onClick={handleShow} centered>
               <h3>{flavor.fields.name}</h3>
             </Button>
-            <Modal show={show} onHide={handleClose}>
+            <Modal modalShow={modalShow} onHide={handleClose}>
               <ModalHeader closeButton>
                 <ModalTitle>
                   {flavor.fields.name}
