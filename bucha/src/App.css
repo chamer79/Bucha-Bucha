@@ -9,6 +9,7 @@
 ==========================*/
 div.App{
   background-color: rgba(247, 244, 239, 0.93);
+  margin: 0 auto;
 }
 body {
   font-family: "Nunito Sans", sans-serif;
@@ -54,11 +55,11 @@ nav {
 nav a {
   font-size: 23px;
   margin: 0 10px;
-  padding: 0 40px;
+  padding: 0 39px;
   color: #000000;
 }
+div.App a:hover,
 nav a:hover {
-  background-color: #007bff;
   color: #000000;
 }
 
@@ -96,6 +97,9 @@ footer,
 /*==========================
   Home Component
 ==========================*/
+.home-content {
+  height: 50vh;
+}
 
 .intro {
   margin: 30px auto;
@@ -151,9 +155,14 @@ li.modal-ingredients{
 /*==========================
   Form Component
 ==========================*/
+.form-main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 70px 0 30px 180px;
+}
+
 form {
   display: grid;
-  margin: 60px 0 40px 110px;  
   width: 400px;
   height: 400px;
 }
@@ -166,16 +175,14 @@ label {
   margin-top: 15px;
   text-align: left;
 }
-button {
+.submit-button {
   border: none;
   background-color: transparent;
   width: 90px;
-  margin: 15px 00;
+  margin: 15px 0 0;
 }
 .spice-image {
- display: gird;
- margin: -420px 0 0 680px;
-
+  display: grid;
 }
 
 /*==========================
@@ -202,10 +209,13 @@ li {
 /*==========================
   Responsive Design
 ==========================*/
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 700px) {
+  main {
+    height: 100vh;
+  }
   h1{
     font-size: 30px;
-    padding: 30px 20px 0;
+    padding: 30px 10px 0;
     letter-spacing: 1px;
   }
   nav{

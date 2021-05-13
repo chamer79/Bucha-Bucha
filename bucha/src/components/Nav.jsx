@@ -12,7 +12,7 @@ function Nav() {
       <nav>
           <Link to="/show/fruit">Fruits</Link>
           <Link to="/show/herb-spice">Herbs &amp; Spices</Link>
-          <Link to="/show/misc">Micsllaneous</Link>
+          <Link to="/show/misc">Miscellaneous</Link>
        
         {/* <div className={visible ? "visible" : "invisible"}>
           <button onClick={() => setVisible(!visible)}>Recipes</button>

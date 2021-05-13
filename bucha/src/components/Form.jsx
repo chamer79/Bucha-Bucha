@@ -24,7 +24,7 @@ function Form(props) {
   };
 
   return (
-    <main>
+    <main className="form-main">
       <form onSubmit={handleSubmit}>
         <label htmlFor="name">Recipe's Name</label>
         <input
@@ -78,7 +78,7 @@ function Form(props) {
           value={days}
           onChange={(e) => setDays(e.target.value)}
         />
-        <button>Submit</button>
+        <button className="submit-button">Submit</button>
       </form>
       <div className="spice-image">
         <img
