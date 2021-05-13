@@ -14,7 +14,7 @@ function Nav() {
           <Link to="/show/herb-spice">Herbs &amp; Spices</Link>
           <Link to="/show/misc">Micsllaneous</Link>
        
-        {/* <div className="dropdown" className={visible ? "visible" : "invisible"}>
+        {/* <div className={visible ? "visible" : "invisible"}>
           <button onClick={() => setVisible(!visible)}>Recipes</button>
           <Link to="/show/fruit">Fruits</Link>
           <Link to="/show/herb-spice">Herbs &amp; Spices</Link>
