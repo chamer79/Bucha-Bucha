@@ -66,7 +66,7 @@ https://www.figma.com/file/tSHSEwpdza0rPbP0j2Z5eM/BUCHA-BUCHA
 -Bucha Basics: Create a modal box for each kombucha fact.<br>
 -Put Request.<br>
 -Add question form to Bucha Basic page.<br>
--Altering the recipe layout from grid to mosaic.
+-Alter static img on Bucha Basics page into a cutout collage img.
 
 
 ## Project Schedule
@@ -90,13 +90,14 @@ https://www.figma.com/file/tSHSEwpdza0rPbP0j2Z5eM/BUCHA-BUCHA
 | --- | :---: |  :---: | :---: | :---: |
 | AirTable Setup | H | 2hrs| 1 hrs | 1hrs |
 | Draft Text Content | M-H  | 2hrs| 1.5hrs | 1.5hrs |
-| Creating Components | H | 5hrs| 4hrs | 0hrs |
-| Rendering Data | H | 6hrs| 8hrs | 8hrs |
-| Form Creation | H | 4hrs| 1hrs | 0hrs |
-| Data Creation & Update | H | 6hrs| 0hrs | 0hrs |
-| CSS  | H | 8hrs| 0hrs | 0hrs |
+| Creating Components | H | 9hrs| 9.5hrs | 0hrs |
+| Rendering Data from API | H | 6hrs| 8hrs | 8hrs |
+| Data Creation & Update | H | 6hrs| 4.5hrs | 0hrs |
+| CSS  | H | 8hrs| 9.5hrs | 9.5hrs |
+| PMVP  | H | TBD hrs| 22hrs | 22hrs |
 
-| Total | H | 33hrs| 11.5hrs | 2hrs |
+| Total | H | 33hrs| 34hrs | 34hrs |
+| Total w/ PMVP | H | 33+hrs| 56hrs | 56hrs |
 
 ## SWOT Analysis
 
@@ -107,3 +108,6 @@ https://www.figma.com/file/tSHSEwpdza0rPbP0j2Z5eM/BUCHA-BUCHA
 ### Opportunities:  Incorporating some of my PMVPs; if not all of them.
 
 ### Threats:  Going down that 'troubleshooting obsessed' rabbit hole.  Covid vaccination recovery.
+
+### Notes:  
+-Make certain to incorporate booststrap when building out the components; incorportaing post component build-out (and CSS) will muck up the style layout.  
