@@ -1,209 +1,33 @@
-/--------------
-/ Recipes.jsx
-/--------------
-
-import { useParams } from "react-router-dom";
-
-
-function Recipes(props) {
-  const params = useParams();
-
-  const matchingFlavors = props.flavors.filter(
-    (flavor) => flavor.fields.type === params.type
-  );
-  return (
-    <div className="recipe-data">
-      {matchingFlavors.map((flavor) => {
-        return (
-          <section className="recipes">
-            <h3>{flavor.fields.name}</h3>
-            <p>Batch Size: {flavor.fields.batchSize}</p>
-            <ul>
-              Ingredients:
-              {flavor.fields.ingredients.split("\n")}
-              {/* {console.log(flavor.fields.ingredients.split("\n"))} */}
-            </ul>
-            <p>Days: {flavor.fields.days}</p>
-          </section>
-        );
-      })}
-    </div>
-  );
-}
-
-export default Recipes;
-
-
-/--------------
-/ Recipes.jsx Modal Box version
-/--------------
-import { useParams } from "react-router-dom";
+//====================
+//  Nav.jsx
+//====================
+import { Link } from "react-router-dom";
 import { useState } from "react";
-import Modal from "react-bootstrap/Modal";
-import ModalBody from "react-bootstrap/ModalBody";
 
-import ModalDialog from "react-bootstrap/ModalDialog";
-import ModalHeader from "react-bootstrap/ModalHeader";
-import ModalTitle from "react-bootstrap/ModalTitle";
-
-function Recipes(props) {
-  const [modalShow, setModalShow] = useState(false);
-    
-  const params = useParams();
-
-  const matchingFlavors = props && props.flavors.filter(
-    (flavor) => flavor.fields.type  === params.type
-  );
-   
-  const handleClose = () => setModalShow(false);
-  const handleShow = () => setModalShow(true);
+function Nav() {
+  const [visible, setVisible] = useState(false);
 
   return (
-    <div className="recipe-modal">
-      
-      {matchingFlavors.map((flavor) => {
-        return (
-          <>
-      
-            <button  onClick={handleShow} centered>
-            <h3>{flavor.fields.name}</h3>
-            </button>
-            <Modal          
-            show={modalShow}
-            aria-labelledby="contained-modal-title-vcenter"
-            onHide={() => setModalShow(false)}
-            >
-              
-            <ModalHeader closeButton>
-            <ModalTitle>
-            {flavor.fields.name}
-            </ModalTitle>
-            </ModalHeader>
-            <ModalBody>
-            <p>Batch Size: {flavor.fields.batchSize}</p>
-            <ul>
-            Ingredients:
-            {flavor.fields.ingredients.split("\n")}
-            {/* {console.log(flavor.fields.ingredients.split("\n"))} */}
-            </ul>
-            <p>Days: {flavor.fields.days}</p>
-                </ModalBody>
-            </Modal>
-            </>
-            )
-      })}
-    </div>
-  )
+    <header className="header">
+      <Link to="/">
+        <h1>BUCHA BUCHA</h1>
+      </Link>
+      <nav>
+        <div className={visible ? "visible" : "invisible"}>
+          <button onClick={() => setVisible(!visible)}>Recipes</button>
+          <Link to="/show/fruit">Fruits</Link>
+          <Link to="/show/herb-spice">Herbs &amp; Spices</Link>
+          <Link to="/show/misc">Micsllaneous</Link>
+        </div>
+          {/* <Link to="/show/fruit">Fruits</Link>
+          <Link to="/show/herb-spice">Herbs &amp; Spices</Link>
+          <Link to="/show/misc">Miscellaneous</Link> */}
+       
+        <Link to="/bucha-basics">Bucha Basics</Link>
+        <Link to="/post">Post Recipe</Link>
+      </nav>
+    </header>
+  );
 }
 
-export default Recipes;
-
-
-/--------------
-/ Modal CSS
-/--------------
-button.modal-button.btn.btn-primary{
- width: 250px;
- display: flex;
- flex-flow: row wrap;
- justify-content: center;
- align-content:center;
- font-family: "Nunito Sans", sans-serif;
- color: #000000;
- background-color: transparent;
- border: none;
- box-shadow: 2px 2px 8px 1px;
- margin: 20px 70px;
- padding: 0 auto;
-}
-div.modal-header,
-div.modal-body {
-  padding-left: 40px;
-}
-div.modal-body {
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 18px;
-  display: flex;
-  flex-flow: column wrap;
-  align-items: flex-start;
-}
-ul.modal-list {
-padding-left: 17px;
-}
-li.modal-ingredients{
-  list-style-type: circle; 
-}
-
-
-/--------------
-/ Responsive Design
-/--------------
-@media screen and (max-width: 700px) {
-
-  main {
-    
-    height: 90vh;
-  }
-  h1{
-    font-size: 30px;
-    padding: 30px 10px 0;
-    letter-spacing: 1px;
-  }
-  nav{
-    display: flex;
-    padding: 15px 0;
-    flex-flow: column wrap;
-    line-height: 35px;
-  
-  }
-  .home-content{
-   width: auto;
-  }
-  h2{
-    
-    font-size: 20px;
-    letter-spacing: 2px;
-  }
-  .intro {
-    margin: 30px auto;
-    width: auto;
-  }
-  .recipe-data {
-    margin: 10px;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 2px;
-   
-  }
-  /* .recipe-data:nth-of-type(2){
-    background-color: 
-  } */
-  form {
-    display: grid;
-    margin: 0 auto;  
-    width: auto;
-    height: auto;
-  }
-  input,
-  textarea {
-  display: block;
-  }
-  label {
-    margin-top: 15px;
-    text-align: left;
-  }
-  button {
-    margin-top: 15px;
-    width: 90px;
-  }
-  .spice-image {
-    display: none;
-  }
-  .faq {
-    width: auto;
-    margin: 0 auto;
-    text-align: center;
-  }
-  .answer {
-    padding: 0 auto;
-  } 
-}
+export default Nav;

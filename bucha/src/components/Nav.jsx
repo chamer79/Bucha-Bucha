@@ -10,16 +10,9 @@ function Nav() {
         <h1>BUCHA BUCHA</h1>
       </Link>
       <nav>
-          <Link to="/show/fruit">Fruits</Link>
-          <Link to="/show/herb-spice">Herbs &amp; Spices</Link>
-          <Link to="/show/misc">Miscellaneous</Link>
-       
-        {/* <div className={visible ? "visible" : "invisible"}>
-          <button onClick={() => setVisible(!visible)}>Recipes</button>
-          <Link to="/show/fruit">Fruits</Link>
-          <Link to="/show/herb-spice">Herbs &amp; Spices</Link>
-          <Link to="/show/misc">Micsllaneous</Link>
-        </div> */}
+        <Link to="/show/fruit">Fruits</Link>
+        <Link to="/show/herb-spice">Herbs &amp; Spices</Link>
+        <Link to="/show/misc">Miscellaneous</Link>
         <Link to="/bucha-basics">Bucha Basics</Link>
         <Link to="/post">Post Recipe</Link>
       </nav>
