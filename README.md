@@ -96,7 +96,7 @@ https://www.figma.com/file/tSHSEwpdza0rPbP0j2Z5eM/BUCHA-BUCHA
 | CSS  | H | 8hrs| 9.5hrs | 9.5hrs |
 | PMVP  | H | TBD hrs| 22hrs | 22hrs |
 
-| Total | H | 33hrs| 34hrs | 34hrs |
+| Total | H | 33hrs| 34hrs | 34hrs |<br>
 | Total w/ PMVP | H | 33+hrs| 56hrs | 56hrs |
 
 ## SWOT Analysis
@@ -110,4 +110,5 @@ https://www.figma.com/file/tSHSEwpdza0rPbP0j2Z5eM/BUCHA-BUCHA
 ### Threats:  Going down that 'troubleshooting obsessed' rabbit hole.  Covid vaccination recovery.
 
 ### Notes:  
--Make certain to incorporate booststrap when building out the components; incorportaing post component build-out (and CSS) will muck up the style layout.  
+-Make certain to incorporate booststrap when building out the components; incorportaing post component build-out (and CSS) will muck up the style layout.<br>
+-Importing bootstrap will cause some pre-exisisting code to become inoperative: examlpe - dropdown menu.  Need to research why this happens and how to rectify this issue.
