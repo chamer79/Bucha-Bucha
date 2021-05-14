@@ -22,7 +22,12 @@ function RecipeModal(props) {
           <ul className="modal-list">
             Ingredients:
             {modalShow.fields.ingredients.split("\n").map((ingredient) => (
-              <li className="modal-ingredients" key={modalShow.fields.ingredient}>{ingredient}</li>
+              <li
+                className="modal-ingredients"
+                key={modalShow.fields.ingredient}
+              >
+                {ingredient}
+              </li>
             ))}
           </ul>
           <p>Days: {modalShow.fields.days}</p>

@@ -65,7 +65,7 @@ function Form(props) {
           id="ingredients"
           required
           columns="30"
-          row="5"
+          row="25"
           value={ingredients}
           onChange={(e) => setIngredients(e.target.value)}
         ></textarea>
