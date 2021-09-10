@@ -113,10 +113,7 @@ button.modal-button.btn.btn-primary {
   padding: 0 auto;
   text-align: center;
 }
-div.modal-header,
-button.modal-button.btn.btn-primary:{
-  
-}
+
 div.modal-dialog {
   margin: 150px auto 0;
 }
@@ -138,6 +135,12 @@ li.modal-ingredients {
   list-style-type: circle;
 }
 
+.recipe-modal {
+  /* margin: 170px 0 10px; */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
 /*==========================
   Form Component
 ==========================*/
