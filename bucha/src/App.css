@@ -10,6 +10,7 @@
 div.App {
   background-color: rgba(247, 244, 239, 0.93);
   margin: 0 auto;
+  height: 100vh;
 }
 body {
   font-family: "Nunito Sans", sans-serif;
