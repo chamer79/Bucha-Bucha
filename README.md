@@ -8,6 +8,10 @@ Bucha Bucha
 
 Bucha Bucha is a React based app that uses an API from Airtable. Users will be able to view and post recipes (based on category) for flavoring a home brewed kombucha during the second fermentaion cycle. Users will also be able to view kombucha facts on the Bucha Basic (FAQ) page.
 
+## Deployed Site
+https://bucha-bucha.netlify.app/
+
+
 ## Wireframes
 
 https://www.figma.com/file/tSHSEwpdza0rPbP0j2Z5eM/BUCHA-BUCHA

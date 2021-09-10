@@ -108,14 +108,14 @@ footer,
 }
 button.modal-button.btn.btn-primary {
   color: #000000;
-  background-color: transparent;
+  background-color: rgb(245, 92, 71);
   border: none;
   padding: 0 auto;
   text-align: center;
 }
 div.modal-header,
-button.modal-button.btn.btn-primary:nth-child(odd) {
-  background-color: rgb(245, 92, 71);
+button.modal-button.btn.btn-primary:{
+  
 }
 div.modal-dialog {
   margin: 150px auto 0;
@@ -229,7 +229,10 @@ p a:visited {
   Recipe Component
 ==========================*/
   .recipe-modal {
-    margin: 170px 0 10px;
+    /* margin: 170px 0 10px; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
   }
   .modal-dialog {
     margin: 0 auto;
