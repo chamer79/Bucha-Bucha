@@ -38,7 +38,7 @@ function BuchaBasics() {
           - Highly recommend the
           <a
             href="https://www.amazon.com/Big-Book-Kombucha-Flavoring-Fermented/dp/161212433X"
-            target="_blank"
+            // target="_blank"
           >
             &nbsp;‘The Big Book of Kombucha’
           </a>

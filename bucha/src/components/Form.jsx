@@ -43,7 +43,7 @@ function Form(props) {
           value={type}
           onChange={(e) => setType(e.target.value)}
         >
-          <option selected disabled={type}>
+          <option disabled value="default">
             ---
           </option>
           <option value="fruit">Fruit</option>

@@ -17,7 +17,7 @@ function RecipeModal(props) {
         <ModalHeader closeButton className="modal-header">
           <ModalTitle>{modalShow.fields.name}</ModalTitle>
         </ModalHeader>
-        <ModalBody calssName="modal-body">
+        <ModalBody className="modal-body">
           <p>Batch Size: {modalShow.fields.batchSize}</p>
           <ul className="modal-list">
             Ingredients:

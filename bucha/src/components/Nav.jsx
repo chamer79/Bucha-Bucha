@@ -1,13 +1,10 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
 
 function Nav() {
-  const [visible, setVisible] = useState(false);
-
   return (
     <header className="header">
       <Link to="/">
-        <h1>BUCHA BUCHA</h1>
+        <h1 className="title">BUCHA BUCHA</h1>
       </Link>
       <nav>
         <Link to="/show/fruit">Fruits</Link>
